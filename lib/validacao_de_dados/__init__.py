@@ -54,4 +54,6 @@ def apenasfloat(txt):
 
 def contagem_itens(lst):
     contagem = list(map(str, range(len(lst))))
+    del contagem[0]
+    contagem.append(f'{len(contagem)+1}')
     return contagem
