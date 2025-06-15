@@ -1,0 +1,32 @@
+✓
+1. Verificar os bolsos
+    * Aparece sempre
+2. Correr pela orla da praia
+    2.1 Verificar os bolsos - 
+    2.2 Continuar à correr desesperado 
+        2.2.1 Verificar os bolsos 
+        2.2.2 Aguardar por socorro
+            2.2.2.1 Na terceira vez ele morre
+        2.2.3 Entrar na floresta (terceira entrada)
+        2.2.4 Status do personagem
+    3.3 Entrar na floresta (Segunda entrada)
+    4.4 Status do personagem
+3. Procurar por sobreviventes na região
+    3.1 Verificar os bolsos
+    3.2 Continuar procurando na região (VC encontrou destroços na agua)
+        3.2.1 Verificar os bolsos
+        3.2.2 Ir até o a água (Você encontrou um bau)
+            3.2.2.1 Verificar os bolsos
+            3.2.2.2 carregar bau (Abre direto e ganha itens)
+                3.2.2.2.1 Verificar os bolsos
+                3.2.2.2.2 Andar em direção floresta (primeira entrada da floresta) 
+                3.2.2.2.3 Status do personagem
+            3.2.2.3 Andar em direção floresta (primeira entrada da floresta)
+            3.2.2.4 Status do personagem
+        3.2.3 Andar em direção floresta (primeira entrada da floresta)
+        3.2.4 Status do personagem
+    3.3 Andar em direção floresta (primeira entrada da floresta)
+    3.4 Status do personagem
+4. Adentrar na floresta (primeira entrada da floresta) - ataque de insetos 
+    4.1 Verificar os bolsos
+5. Status do personagem
