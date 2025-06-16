@@ -1,9 +1,18 @@
 from lib.interface import *
 from lib.validacao_de_dados import *
+from lib.chekpoint import *
+
+inventario = 'Inventario.txt'
+if not arquivoexiste(inventario):
+    criararquivo(inventario)
+    coletar(inventario, 'Foto da família')
+
+personagem = 'personagem.txt'
+if not arquivoexiste(personagem):
+    criararquivo(personagem)
+    modificar_status(personagem)
 
 # variaveis
-personagem = {'Vida': 100, 'Energia': 100, 'Situação': 'Saudavel', 'Localização': 'Local do acidente'}
-inventario = []
 lista_opcoes = []
 
 titulo("JOGO DA ILHA",n=40)
@@ -22,7 +31,7 @@ while True:
             paragrafo('Inventario vazio!',0.05)
             sleep(0.5)
         else:
-            listas(inventario, True)
+            ver_itens(inventario, n_em_item=True)
 
     elif resposta == '2':
         paragrafo('vc corre')
@@ -57,7 +66,7 @@ if lista_opcoes[0] == 'Correr pela orla da praia':
                 paragrafo('Inventario vazio!',0.05)
                 sleep(0.5)
             else:
-                listas(inventario, True)
+                ver_itens(inventario, True)
 
         elif resposta == '2':
           paragrafo('corre mais')
@@ -87,7 +96,7 @@ if lista_opcoes[0] == 'Correr pela orla da praia':
                     paragrafo('Inventario vazio!',0.05)
                     sleep(0.5)
                 else:
-                    listas(inventario, True)
+                    ver_itens(inventario, True)
                         
 
             elif resposta == '2':
