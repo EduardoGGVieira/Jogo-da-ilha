@@ -31,13 +31,13 @@ def titulo(txt, lin="-" , n=0):
     linha(lin,n)
 
 
-def paragrafo(txt,n=0.01):
+def paragrafo(txt,n=0.01,alinhamento=40):
     cont=0
     for i in txt:
         sleep(n)
         print(i, end='', flush=True)
         cont+=1
-        if cont == 40:
+        if cont == alinhamento:
             print()
             cont = 0
     print()

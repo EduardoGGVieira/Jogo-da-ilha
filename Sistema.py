@@ -14,17 +14,19 @@ if not arquivoexiste(personagem):
 
 # variaveis
 lista_opcoes = []
+alinhamento = 80
 
-titulo("JOGO DA ILHA",n=40)
+titulo("JOGO DA ILHA",n=alinhamento)
 
-paragrafo("blalblaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabla")
+#paragrafo("O som das ondas era tudo o que David conseguia ouvir. Quando abriu os olhos, a luz do sol o cegou por um momento — e então veio a dor. Seu corpo estava dolorido, seus pulmões queimando com o sal, e à sua volta… apenas a imensidão de uma ilha desconhecida.\nHoras antes, David era apenas mais um passageiro em um navio de carga cruzando águas traiçoeiras. Uma tempestade inesperada, gritos, madeira quebrando, escuridão. Agora, sozinho e ferido, ele desperta na areia molhada, cercado por uma floresta densa e ameaçadora, sem sinal de civilização. Cada passo pode ser decisivo. Cada escolha, uma linha tênue entre a vida e a morte.\nVocê está no controle. Ajude David a explorar, sobreviver e, talvez, encontrar uma forma de voltar para casa. Mas cuidado: nesta ilha, nem tudo é o que parece… e nem todas as escolhas têm volta.\n", alinhamento=alinhamento)
 
 #opcoes1
 while True:
-    linha('~',40)
+    linha('~',alinhamento)
     opcoes = ['Verificar os bolsos','Correr pela orla da praia','Procurar por sobreviventes na região', 'Adentrar na floresta','Status do personagem']
     listas(opcoes, True)  
     resposta = apenasitem(contagem_itens(opcoes), '\nSua opção: ')
+    linha('-',alinhamento)
 
     if resposta == '1':
         if len(inventario) == 0:
@@ -56,7 +58,7 @@ if lista_opcoes[0] == 'Correr pela orla da praia':
 
     #opção2
     while True:
-        linha('~',40)
+        linha('~',alinhamento)
         opcoes = ['Verificar os bolsos','Continuar à correr desesperado','Entrar na floresta','Status do personagem']
         listas(opcoes, True)  
         resposta = apenasitem(contagem_itens(opcoes), '\nSua opção: ')
@@ -86,7 +88,7 @@ if lista_opcoes[0] == 'Correr pela orla da praia':
         #opção3
         contador_socorro = 0
         while True:
-            linha('~',40)
+            linha('~',alinhamento)
             opcoes = ['Verificar os bolsos','Aguardar por socorro','Entrar na floresta','Status do personagem']
             listas(opcoes, True)  
             resposta = apenasitem(contagem_itens(opcoes), '\nSua opção: ')
