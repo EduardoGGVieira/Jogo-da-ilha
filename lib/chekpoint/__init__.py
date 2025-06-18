@@ -70,7 +70,7 @@ def ver_status(nome):
         print('ERRO na leitura do arquivo!')
         semcor()
     else:
-        vermelho()
+        verde()
         for lin in a:
             dados = lin.split(';')
             print(f'Vida = {dados[0]}\nEnergia = {dados[1]}\nSituação = {dados[2]}\nLocalização = {dados[3]}')

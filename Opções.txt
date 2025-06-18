@@ -1,14 +1,14 @@
 ✓
-1. Verificar os bolsos
+✓1. Verificar os bolsos
     * Aparece sempre
 2. Correr pela orla da praia
-    2.1 Verificar os bolsos - 
+    ✓2.1 Verificar os bolsos - 
     2.2 Continuar à correr desesperado 
-        2.2.1 Verificar os bolsos 
-        2.2.2 Aguardar por socorro
+        ✓2.2.1 Verificar os bolsos 
+        ✓2.2.2 Aguardar por socorro
             2.2.2.1 Na terceira vez ele morre
         2.2.3 Entrar na floresta (terceira entrada)
-        2.2.4 Status do personagem
+        ✓2.2.4 Status do personagem
     2.3 Entrar na floresta (Segunda entrada)
     2.4 Status do personagem
 3. Procurar por sobreviventes na região
@@ -34,3 +34,43 @@
 4. Adentrar na floresta (primeira entrada da floresta) - ataque de insetos 
     4.1 Verificar os bolsos
 5. Status do personagem
+
+
+Opção
+while True:
+        sleep(0.5)
+        linha('~',alinhamento)
+        opcoes = ['Verificar os bolsos','Editar','Editar','Status do personagem']
+        listas(opcoes, True)  
+        resposta = apenasitem(contagem_itens(opcoes), '\nSua opção: ')
+
+        if resposta == '1':
+            if len(inventario) == 0:
+                paragrafo('Inventario vazio!',0.05)
+                sleep(0.5)
+            else:
+                ver_itens(inventario, True)
+
+        elif resposta == '2':
+          paragrafo('Editar',alinhamento=alinhamento)
+          lista_opcoes.append('Editar')
+          break
+
+        elif resposta == '3':
+            paragrafo('Editar',alinhamento=alinhamento)
+            lista_opcoes.append('Editar')
+            break
+        
+        elif resposta == '4':
+            print(personagem)
+
+
+
+
+combate       
+elif resposta == '3':
+            paragrafo('Editar',alinhamento=alinhamento)
+            lista_opcoes.append('Entrar na floresta 3')
+            #Ex atacado por animal
+            modificar_status(personagem, int(pegar_status(personagem,0))-urso()['Forca'])
+            break
