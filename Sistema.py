@@ -36,18 +36,18 @@ while True:
             ver_itens(inventario, n_em_item=True)
 
     elif resposta == '2':
-        paragrafo('vc corre')
+        paragrafo('Você corre pela orla, mas não encontra nada nem ninguem.',alinhamento=alinhamento)
         lista_opcoes.append('Correr pela orla da praia')
         break
 
     elif resposta == '3':
-        paragrafo('')
-        lista_opcoes.append('Procurar por sobreviventes na regeão')
+        paragrafo('',alinhamento=alinhamento)
+        lista_opcoes.append('Procurar por sobreviventes na região')
         break
 
     
     elif resposta == '4':
-        paragrafo('')
+        paragrafo('',alinhamento=alinhamento)
         lista_opcoes.append('Adentrar na floresta')
         break
 
@@ -71,12 +71,12 @@ if lista_opcoes[0] == 'Correr pela orla da praia':
                 ver_itens(inventario, True)
 
         elif resposta == '2':
-          paragrafo('corre mais')
+          paragrafo('Você continua a correr desesperado e sem rumo, até chegar em um paredão, suas escolhas são poucas agora.',alinhamento=alinhamento)
           lista_opcoes.append('Continuar à correr desesperado')
           break
 
         elif resposta == '3':
-            paragrafo('')
+            paragrafo('',alinhamento=alinhamento)
             lista_opcoes.append('Entrar na floresta')
             break
         
@@ -103,24 +103,23 @@ if lista_opcoes[0] == 'Correr pela orla da praia':
 
             elif resposta == '2':
                 if contador_socorro == 0:
-                    paragrafo('Vamos esperar')
+                    paragrafo('Você senta na areia e aguarda por resgate',alinhamento=alinhamento)
                 elif contador_socorro == 1:
-                    paragrafo('Vamos esperar')
+                    paragrafo('Depois de muito aguardar você se sente triste',alinhamento=alinhamento)
                 elif contador_socorro == 2:
-                    paragrafo('Vamos esperar')
-                elif contador_socorro == 3:
-                    paragrafo('Vamos esperar')
+                    paragrafo('Depois de aguardar por uma eternidade, sozinho triste e sem esperanças.',alinhamento=alinhamento)
+                    paragrafo("Você desiste.", alinhamento=alinhamento)
+                    print()
 
                 contador_socorro += 1
-                print(contador_socorro, lista_opcoes)
                 if contador_socorro == 3:
                     lista_opcoes.append('Aguardar por socorro')
-                    personagem['Vida'] = 0
-                    print('vc morreu')
+                    print('The end')
+                    print("Parabens final secreto!")
                     break
 
             elif resposta == '3':
-                paragrafo('')
+                paragrafo('',alinhamento=alinhamento)
                 lista_opcoes.append('Entrar na floresta')
                 break
             

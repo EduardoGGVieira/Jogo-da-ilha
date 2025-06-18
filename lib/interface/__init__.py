@@ -31,7 +31,7 @@ def titulo(txt, lin="-" , n=0):
     linha(lin,n)
 
 
-def paragrafo(txt,n=0.01,alinhamento=40):
+def paragrafo(txt,n=0.01,alinhamento=60):
     cont=0
     for i in txt:
         sleep(n)
