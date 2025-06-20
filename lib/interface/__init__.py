@@ -50,3 +50,9 @@ def listas(lst, n_em_item=False):
     else:
         for valor in lst:
             print(valor)
+
+def mostrar_opcoes(opcoes):
+    i = 1
+    for opcao in opcoes:
+        print(f'{i} - {opcao}')
+        i+=1

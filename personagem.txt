@@ -1,1 +1,1 @@
--100;100;Saudavel;Local do acidente
+100;100;Saudavel;Local do acidente
